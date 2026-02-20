@@ -61,7 +61,11 @@ header .container {
 }
 
 .logo { font-size: 1.5rem; font-weight: bold; display: flex; align-items: center; gap: 10px; }
-.logo i { color: var(--accent-yellow); }
+.logo img { 
+    width: 50px;
+    height: 50x;
+    border-radius: 50%;
+}
 
 nav ul { display: flex; gap: 30px; }
 nav a:hover { color: var(--accent-yellow); }
