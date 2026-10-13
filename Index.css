@@ -116,7 +116,7 @@ button, input, textarea, select { font: inherit; }
 .light-heading h2 { color: #fff; }
 .light-heading > p:last-child { color: #9cacbf; }
 .light-heading .section-kicker, .routes-section .section-kicker { color: var(--amber-400); }
-.popular-routes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.popular-routes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .route-card {
     display: flex;
     min-height: 190px;
