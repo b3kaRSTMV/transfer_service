@@ -144,6 +144,36 @@ button, input, textarea, select { font: inherit; }
 .price-table { display: grid; grid-template-columns: 1fr 1fr; padding: 0 18px 14px; column-gap: 26px; }
 .price-table div { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 9px 0; border-top: 1px solid #edf0f4; font-size: .88rem; }
 .price-table strong { color: var(--navy-900); white-space: nowrap; }
+.price-group--issyk-north { color: #fff; border-color: #3b82f6; background: #2563eb; }
+.price-group--green-light { color: #21310b; border-color: #8fc72c; background: #a3e635; }
+.price-group--issyk-south { color: var(--navy-900); border-color: #7db7f5; background: #93c5fd; }
+.price-group--naryn { color: #332317; border-color: #c9a27e; background: #d7b594; }
+.price-group--south { color: #2f2605; border-color: #e3ad12; background: #f6c945; }
+.price-group--talas { color: #fff; border-color: #5e8f16; background: #4d7c0f; }
+.price-group--issyk-north .price-group-heading,
+.price-group--talas .price-group-heading { color: #fff; }
+.price-group--issyk-north .price-group-heading span,
+.price-group--talas .price-group-heading span { color: rgba(255, 255, 255, .82); }
+.price-group--issyk-north .price-table strong,
+.price-group--talas .price-table strong { color: #fff; }
+.price-group--issyk-north .price-table div,
+.price-group--talas .price-table div { border-color: rgba(255, 255, 255, .22); }
+.price-group--issyk-south .price-group-heading,
+.price-group--green-light .price-group-heading,
+.price-group--naryn .price-group-heading,
+.price-group--south .price-group-heading { color: inherit; }
+.price-group--issyk-south .price-group-heading span,
+.price-group--green-light .price-group-heading span,
+.price-group--naryn .price-group-heading span,
+.price-group--south .price-group-heading span { color: rgba(23, 32, 51, .72); }
+.price-group--issyk-south .price-table strong,
+.price-group--green-light .price-table strong,
+.price-group--naryn .price-table strong,
+.price-group--south .price-table strong { color: inherit; }
+.price-group--issyk-south .price-table div,
+.price-group--green-light .price-table div,
+.price-group--naryn .price-table div,
+.price-group--south .price-table div { border-color: rgba(23, 32, 51, .16); }
 .price-note { display: flex; align-items: center; gap: 9px; margin-top: 20px; color: var(--muted); font-size: .87rem; }
 
 /* Fleet */
