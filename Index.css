@@ -219,7 +219,9 @@ button, input, textarea, select { font: inherit; }
 .footer-brand p { margin-top: 14px; }
 .footer-links, .footer-contacts { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
 .footer-links a:hover, .footer-contacts a:hover { color: var(--amber-300); }
-.footer-bottom { margin-top: 44px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.1); font-size: .8rem; }
+.footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 44px; padding-top: 22px; border-top: 1px solid rgba(255,255,255,.1); font-size: .8rem; }
+.admin-login-link { display: inline-flex; align-items: center; gap: 7px; color: #aebacc; text-decoration: none; transition: color .2s ease; }
+.admin-login-link:hover { color: #fff; }
 .mobile-actions { display: none; }
 
 @media (max-width: 1020px) {
@@ -269,6 +271,7 @@ button, input, textarea, select { font: inherit; }
     .contact-button:hover { transform: none; }
     .footer-inner { gap: 28px; }
     .footer-links { flex-direction: row; flex-wrap: wrap; }
+    .footer-bottom { align-items: flex-start; flex-direction: column; }
     .mobile-actions {
         position: fixed;
         z-index: 50;

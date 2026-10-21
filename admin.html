@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="theme-color" content="#0b1f3a">
+    <title>Управление ценами — Transfer Tour Service</title>
+    <link rel="icon" href="./img/logo-160.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+    <main class="admin-shell">
+        <header class="admin-header">
+            <a class="admin-brand" href="./index.html"><img src="./img/logo-160.jpg" alt="" width="48" height="48"><span>Transfer Tour Service</span></a>
+            <a class="back-link" href="./index.html">Открыть сайт</a>
+        </header>
+
+        <section id="setupPanel" class="panel setup-panel" hidden>
+            <h1>Нужно подключить базу</h1>
+            <p>Откройте файл <strong>НАСТРОЙКА-АДМИНКИ.md</strong> и выполните короткую инструкцию. После этого здесь появится вход.</p>
+        </section>
+
+        <section id="loginPanel" class="panel login-panel" hidden>
+            <p class="eyebrow">Админ-панель</p>
+            <h1>Вход для владельца</h1>
+            <p>Введите email и пароль, созданные в Supabase.</p>
+            <form id="loginForm">
+                <label>Email<input id="email" type="email" autocomplete="username" required></label>
+                <label>Пароль<input id="password" type="password" autocomplete="current-password" required></label>
+                <button type="submit">Войти</button>
+                <p id="loginMessage" class="message" role="status"></p>
+            </form>
+        </section>
+
+        <section id="editorPanel" class="editor" hidden>
+            <div class="editor-top">
+                <div><p class="eyebrow">Админ-панель</p><h1>Цены на поездки</h1><p>Измените нужные суммы и нажмите «Сохранить».</p></div>
+                <button id="logoutButton" class="secondary" type="button">Выйти</button>
+            </div>
+            <div id="priceGroups" class="admin-groups"></div>
+            <div class="save-bar"><p id="saveMessage" class="message" role="status"></p><button id="saveButton" type="button">Сохранить цены</button></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./supabase-config.js"></script>
+    <script src="./admin.js"></script>
+</body>
+</html>
